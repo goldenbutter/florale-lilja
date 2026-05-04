@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buketter — Florale Lilja</title>
+  <meta name="description" content="Sesongens håndbundne buketter. Bestill via Vipps, hent i Orkanger eller få levert lokalt." />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <meta property="og:type"             content="website" />
+  <meta property="og:site_name"        content="Florale Lilja" />
+  <meta property="og:locale"           content="nb_NO" />
+  <meta property="og:url"              content="https://demo-blomsterbutikk-classic.ibithun.com/bouquetter.html" />
+  <meta property="og:title"            content="Buketter — Florale Lilja" />
+  <meta property="og:description"      content="Sesongens håndbundne buketter. Bestill via Vipps, hent i Orkanger eller få levert lokalt." />
+  <meta property="og:image"            content="https://demo-blomsterbutikk-classic.ibithun.com/assets/images/bouquet-romantic-pink.jpg" />
+  <meta property="og:image:width"      content="896" />
+  <meta property="og:image:height"     content="1200" />
+  <meta property="og:image:alt"        content="Romantisk rosa bukett av roser, peoner og dahliaer" />
+  <meta name="twitter:card"            content="summary_large_image" />
+  <meta name="twitter:title"           content="Buketter — Florale Lilja" />
+  <meta name="twitter:description"     content="Sesongens håndbundne buketter. Bestill via Vipps." />
+  <meta name="twitter:image"           content="https://demo-blomsterbutikk-classic.ibithun.com/assets/images/bouquet-romantic-pink.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Hovednavigasjon">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg width="22" height="22" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+          <ellipse cx="32" cy="20" rx="6" ry="10"/>
+          <ellipse cx="22" cy="30" rx="6" ry="10" transform="rotate(-55 22 30)"/>
+          <ellipse cx="42" cy="30" rx="6" ry="10" transform="rotate(55 42 30)"/>
+          <circle cx="32" cy="32" r="4" fill="var(--color-accent)"/>
+        </svg>
+        <span data-i18n="nav.logo">Florale Lilja</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html"      data-i18n="nav.home">Hjem</a></li>
+        <li><a href="bouquetter.html" data-i18n="nav.bouquets">Buketter</a></li>
+        <li><a href="om-oss.html"     data-i18n="nav.about">Om oss</a></li>
+        <li><a href="galleri.html"    data-i18n="nav.gallery">Galleri</a></li>
+        <li><a href="kontakt.html"    data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <div class="nav-right">
+        <!-- EN toggle hidden for classic tier — uncomment to enable as paid upgrade
+        <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Bytt språk">EN</button>
+        -->
+        <button type="button" class="hamburger" id="hamburger" aria-label="Åpne meny" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigasjonsmeny">
+    <a href="index.html"      data-i18n="nav.home">Hjem</a>
+    <a href="bouquetter.html" data-i18n="nav.bouquets">Buketter</a>
+    <a href="om-oss.html"     data-i18n="nav.about">Om oss</a>
+    <a href="galleri.html"    data-i18n="nav.gallery">Galleri</a>
+    <a href="kontakt.html"    data-i18n="nav.contact">Kontakt</a>
+  </div>
+
+  <main>
+
+    <section class="page-banner" aria-label="Sidetittel">
+      <div class="page-banner-bg" style="background-image: url('assets/images/about-banner.jpg');" role="img">
+        <img data-i18n="bouquets.banner.alt" src="" alt="" style="display:none;" />
+      </div>
+      <div class="page-banner-overlay"></div>
+      <div class="page-banner-content">
+        <h1 data-i18n="bouquets.banner.title">Sesongens buketter</h1>
+        <p data-i18n="bouquets.banner.sub">Bestill håndbundne buketter til henting i Orkanger eller levering lokalt.</p>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="catalog-inner">
+        <div class="section-heading reveal">
+          <span class="section-label" data-i18n="nav.bouquets">Buketter</span>
+          <h2 data-i18n="catalog.heading">Buketter denne uka</h2>
+          <p data-i18n="catalog.sub">Prisene gjelder for buketten som vist. Vi tilpasser gjerne størrelse, farger og innpakning — bare gi beskjed når du bestiller.</p>
+        </div>
+
+        <div class="bouquet-grid reveal-stagger">
+          <article class="bouquet-card reveal">
+            <img class="bouquet-image" src="assets/images/bouquet-classic-white.jpg" alt="Klassisk hvit bukett med roser, ranunkel og eukalyptus" data-i18n="b1.alt" loading="lazy" />
+            <div class="bouquet-body">
+              <h3 data-i18n="b1.title">Klassisk hvit</h3>
+              <div class="bouquet-price">
+                <strong data-i18n="b1.price">695</strong>
+                <span>NOK</span>
+              </div>
+              <p data-i18n="b1.desc">Hvite roser, ranunkel, slør og sølveukalyptus. Tidløs og rolig — perfekt til konfirmasjoner, vertinnegaver og enkle takk.</p>
+              <button type="button" class="btn btn-primary vipps-trigger">Bestill via Vipps</button>
+            </div>
+          </article>
+
+          <article class="bouquet-card reveal">
+            <img class="bouquet-image" src="assets/images/bouquet-pastel-spring.jpg" alt="Pasteltonet vårbukett med peoner, ranunkel og tulipaner" data-i18n="b2.alt" loading="lazy" />
+            <div class="bouquet-body">
+              <h3 data-i18n="b2.title">Pastell vår</h3>
+              <div class="bouquet-price">
+                <strong data-i18n="b2.price">595</strong>
+                <span>NOK</span>
+              </div>
+              <p data-i18n="b2.desc">Lyserosa peoner, fersken-ranunkel og blå tulipaner. Lett og luftig — for de gode hverdagshilsenene.</p>
+              <button type="button" class="btn btn-primary vipps-trigger">Bestill via Vipps</button>
+            </div>
+          </article>
+
+          <article class="bouquet-card reveal">
+            <span class="bouquet-card-badge" data-i18n="b3.badge">Mest populær</span>
+            <img class="bouquet-image" src="assets/images/bouquet-romantic-pink.jpg" alt="Tett romantisk bukett i ulike rosa nyanser" data-i18n="b3.alt" loading="lazy" />
+            <div class="bouquet-body">
+              <h3 data-i18n="b3.title">Romantisk rosa</h3>
+              <div class="bouquet-price">
+                <strong data-i18n="b3.price">745</strong>
+                <span>NOK</span>
+              </div>
+              <p data-i18n="b3.desc">Roser, peoner og dahliaer i dype og myke rosa nyanser. Vår mest etterspurte bukett — bestselger til kjæresten.</p>
+              <button type="button" class="btn btn-primary vipps-trigger">Bestill via Vipps</button>
+            </div>
+          </article>
+
+          <article class="bouquet-card reveal">
+            <img class="bouquet-image" src="assets/images/bouquet-summer.jpg" alt="Løs sommerbukett av kornblomster, prestekrager og lavendel" data-i18n="b4.alt" loading="lazy" />
+            <div class="bouquet-body">
+              <h3 data-i18n="b4.title">Sommerhilsen</h3>
+              <div class="bouquet-price">
+                <strong data-i18n="b4.price">495</strong>
+                <span>NOK</span>
+              </div>
+              <p data-i18n="b4.desc">Markblomster bundet løst og fritt — kornblomster, prestekrager, lavendel. Som en sommerlig tur i åkeren.</p>
+              <button type="button" class="btn btn-primary vipps-trigger">Bestill via Vipps</button>
+            </div>
+          </article>
+
+          <article class="bouquet-card reveal">
+            <img class="bouquet-image" src="assets/images/bouquet-funeral.jpg" alt="Hvit bårebukett med roser, lilja og grønt slør på trebenk" data-i18n="b5.alt" loading="lazy" />
+            <div class="bouquet-body">
+              <h3 data-i18n="b5.title">Bårebukett</h3>
+              <div class="bouquet-price">
+                <strong data-i18n="b5.price">1 450</strong>
+                <span>NOK</span>
+              </div>
+              <p data-i18n="b5.desc">Hvit-grønn bårebukett med roser, lilja og slør. Vi leverer til kapellet eller seremonien etter avtale.</p>
+              <button type="button" class="btn btn-primary vipps-trigger">Bestill via Vipps</button>
+            </div>
+          </article>
+
+          <article class="bouquet-card reveal">
+            <img class="bouquet-image" src="assets/images/bouquet-wedding.jpg" alt="Romantisk bryllupsbukett med peoner og slør holdt av brud" data-i18n="b6.alt" loading="lazy" />
+            <div class="bouquet-body">
+              <h3 data-i18n="b6.title">Bryllupsbukett</h3>
+              <div class="bouquet-price">
+                <strong data-i18n="b6.price">fra 1 800</strong>
+                <span>NOK</span>
+              </div>
+              <p data-i18n="b6.desc">Skreddersydd til din dag etter samtale med oss. Bestilles minst tre uker i forveien — vi bringer fargeprøver og blomsterskisser.</p>
+              <button type="button" class="btn btn-primary vipps-trigger">Bestill samtale</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="faq-inner">
+        <div class="section-heading reveal" style="text-align:left; margin-bottom: 2rem;">
+          <span class="section-label" data-i18n="contact.h3">Snakk med oss</span>
+          <h2 data-i18n="faq.heading" style="margin-top:0.4rem;">Spørsmål & svar</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question" data-i18n="faq1.q">Hvordan bestiller jeg?</button>
+            <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq1.a">Velg buketten du ønsker og klikk «Bestill via Vipps». Du oppgir leveringsdag, eventuelt mottakers adresse og en personlig hilsen — vi binder buketten ferdig til avtalt tid.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" data-i18n="faq2.q">Leverer dere?</button>
+            <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq2.a">Ja. Vi leverer fritt i Orkanger og Fannrem, og kjører ut til Svorkmo, Lensvik og Børsa for et lite tillegg. Bestillinger gjort før kl. 11 leveres samme dag.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" data-i18n="faq3.q">Kan jeg endre eller avbestille?</button>
+            <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq3.a">Ja — kontakt oss minst 24 timer før avtalt henting eller levering, så ordner vi det uten kostnad. Bryllups- og begravelsesbestillinger har egne vilkår på grunn av blomstebestilling.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" data-i18n="faq4.q">Hva med bryllup og store oppdrag?</button>
+            <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq4.a">Ta kontakt minst tre uker i forveien for bryllup, og vi setter av tid til en samtale med fargeprøver. For begravelser kan vi som regel hjelpe innen 24 timer.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3 data-i18n="nav.logo">Florale Lilja</h3>
+        <p data-i18n="footer.tagline">Lokalt bundne buketter siden 2014.</p>
+        <address class="footer-address" data-i18n="footer.address">Orkdalsveien 25, 7300 Orkanger</address>
+      </div>
+      <nav class="footer-links" aria-label="Sidelenker">
+        <h4 data-i18n="footer.links">Sider</h4>
+        <ul>
+          <li><a href="index.html"      data-i18n="nav.home">Hjem</a></li>
+          <li><a href="bouquetter.html" data-i18n="nav.bouquets">Buketter</a></li>
+          <li><a href="om-oss.html"     data-i18n="nav.about">Om oss</a></li>
+          <li><a href="galleri.html"    data-i18n="nav.gallery">Galleri</a></li>
+          <li><a href="kontakt.html"    data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h4 data-i18n="footer.contact">Kontakt</h4>
+        <p><a href="tel:+4772481122" data-i18n="footer.phone">+47 72 48 11 22</a></p>
+        <p><a href="mailto:post@floralelilja.no" data-i18n="footer.email">post@floralelilja.no</a></p>
+        <p class="response-note" data-i18n="footer.response">Vi svarer som regel innen samme dag</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.copyright">© 2026 Florale Lilja</span>
+      <a href="#" data-i18n="footer.dev">Utviklet av Bithun</a>
+      <!-- View counter hidden for classic tier — uncomment to enable as paid upgrade
+      <img src="https://visitor-badge.laobi.icu/badge?page_id=demo-blomsterbutikk-classic.ibithun.com&left_color=%23333333&right_color=%233A5A40&left_text=Views" alt="Sidevisninger" />
+      -->
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="vipps-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <div class="modal-vipps-logo" aria-label="Vipps">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <circle cx="10" cy="10" r="10" fill="white" opacity="0.25"/>
+          <text x="10" y="14" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">V</text>
+        </svg>
+        Vipps
+      </div>
+      <h2 id="modal-title" data-i18n="modal.title">Dette er en demo</h2>
+      <p data-i18n="modal.body1">Dette er en demo — Vipps-betaling aktiveres når din konto er satt opp.</p>
+      <p>
+        <span data-i18n="modal.body2">Kontakt oss for å se hvordan dette fungerer for din butikk:</span>
+        <a href="mailto:post@floralelilja.no" data-i18n="modal.email">post@floralelilja.no</a>
+      </p>
+      <button type="button" class="modal-close-btn" data-i18n="modal.close">Lukk</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

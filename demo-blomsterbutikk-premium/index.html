@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Florale Lilja — Håndbundne buketter i Orkanger</title>
+  <meta name="description" content="Florale Lilja er et lite blomsterstudio i Orkanger. Sesongens vakreste blomster — bundet for hånd siden 2014." />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"             content="website" />
+  <meta property="og:site_name"        content="Florale Lilja" />
+  <meta property="og:locale"           content="nb_NO" />
+  <meta property="og:url"              content="https://demo-blomsterbutikk-premium.ibithun.com/" />
+  <meta property="og:title"            content="Florale Lilja — Håndbundne buketter i Orkanger" />
+  <meta property="og:description"      content="Sesongens vakreste blomster — bundet for hånd siden 2014. Bestill via Vipps." />
+  <meta property="og:image"            content="https://demo-blomsterbutikk-premium.ibithun.com/assets/images/hero-bouquet.jpg" />
+  <meta property="og:image:width"      content="1376" />
+  <meta property="og:image:height"     content="768" />
+  <meta property="og:image:alt"        content="Romantisk pasteltonet bukett med peoner og roser" />
+  <meta name="twitter:card"            content="summary_large_image" />
+  <meta name="twitter:title"           content="Florale Lilja — Håndbundne buketter i Orkanger" />
+  <meta name="twitter:description"     content="Sesongens vakreste blomster — bundet for hånd siden 2014. Bestill via Vipps." />
+  <meta name="twitter:image"           content="https://demo-blomsterbutikk-premium.ibithun.com/assets/images/hero-bouquet.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- === NAVIGATION === -->
+  <nav class="nav" role="navigation" aria-label="Hovednavigasjon">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg width="22" height="22" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+          <ellipse cx="32" cy="20" rx="6" ry="10"/>
+          <ellipse cx="22" cy="30" rx="6" ry="10" transform="rotate(-55 22 30)"/>
+          <ellipse cx="42" cy="30" rx="6" ry="10" transform="rotate(55 42 30)"/>
+          <circle cx="32" cy="32" r="4" fill="var(--color-accent)"/>
+        </svg>
+        <span data-i18n="nav.logo">Florale Lilja</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html"     data-i18n="nav.home">Hjem</a></li>
+        <li><a href="bouquetter.html" data-i18n="nav.bouquets">Buketter</a></li>
+        <li><a href="om-oss.html"     data-i18n="nav.about">Om oss</a></li>
+        <li><a href="galleri.html"    data-i18n="nav.gallery">Galleri</a></li>
+        <li><a href="kontakt.html"    data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Bytt språk">EN</button>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Åpne meny" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigasjonsmeny">
+    <a href="index.html"      data-i18n="nav.home">Hjem</a>
+    <a href="bouquetter.html" data-i18n="nav.bouquets">Buketter</a>
+    <a href="om-oss.html"     data-i18n="nav.about">Om oss</a>
+    <a href="galleri.html"    data-i18n="nav.gallery">Galleri</a>
+    <a href="kontakt.html"    data-i18n="nav.contact">Kontakt</a>
+    <button type="button" class="lang-toggle" id="mobile-lang-toggle">EN</button>
+  </div>
+
+  <main>
+
+    <!-- === HERO === -->
+    <section class="hero" aria-label="Velkomstbilde">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto"
+             poster="assets/images/hero-bouquet.jpg" aria-hidden="true">
+        <source src="assets/images/hero-bouquet.mp4" type="video/mp4" />
+      </video>
+      <img data-i18n="hero.img.alt" src="" alt="Stort romantisk buket av peoner og roser i pasteltoner mot mykt morgensolglys" style="display:none;" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="section-label" data-i18n="hero.label">Studioflorist i Orkanger</span>
+        <h1 data-i18n="hero.headline">Bundet for hånd, <em class="hero-rotator" data-rotator="1"></em></h1>
+        <p data-i18n="hero.sub">Sesongens vakreste blomster — plukket i Trøndelag, formet med rolige hender. Hver bukett bæres med en historie.</p>
+        <div class="hero-cta-row">
+          <a href="bouquetter.html" class="btn btn-accent" data-i18n="hero.cta">Se sesongens buketter</a>
+          <a href="#" class="btn btn-outline vipps-trigger" data-i18n="hero.cta2">Bestill via Vipps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- === BLOOMS STRIP === -->
+    <section class="blooms-strip">
+      <div class="blooms-strip-inner">
+        <span class="section-label reveal" data-i18n="blooms.label">Sesongens blomster</span>
+        <h2 class="reveal" data-i18n="blooms.heading">Det vi binder akkurat nå</h2>
+        <p class="blooms-strip-sub reveal" data-i18n="blooms.sub">Friske leveranser hver tirsdag og fredag fra norske gartnerier.</p>
+
+        <div class="blooms-grid reveal-stagger">
+          <article class="bloom-card bloom-of-the-week reveal">
+            <span class="pulse-badge" data-i18n="bloom.weekly">Ukens blomst</span>
+            <img class="bloom-thumb" src="assets/images/bloom-pioner.jpg" alt="Lyserosa pioner i fullt flor" data-i18n="bloom1.alt" loading="lazy" />
+            <div class="bloom-info">
+              <span class="bloom-name" data-i18n="bloom1.name">Pioner</span>
+              <span class="bloom-latin" data-i18n="bloom1.latin">Paeonia lactiflora</span>
+            </div>
+          </article>
+
+          <article class="bloom-card reveal">
+            <img class="bloom-thumb" src="assets/images/bloom-ranunkel.jpg" alt="Tett kremfarget ranunkel sett ovenfra" data-i18n="bloom2.alt" loading="lazy" />
+            <div class="bloom-info">
+              <span class="bloom-name" data-i18n="bloom2.name">Ranunkel</span>
+              <span class="bloom-latin" data-i18n="bloom2.latin">Ranunculus asiaticus</span>
+            </div>
+          </article>
+
+          <article class="bloom-card reveal">
+            <img class="bloom-thumb" src="assets/images/bloom-anemone.jpg" alt="Hvit anemone med dyp lilla midte" data-i18n="bloom3.alt" loading="lazy" />
+            <div class="bloom-info">
+              <span class="bloom-name" data-i18n="bloom3.name">Anemone</span>
+              <span class="bloom-latin" data-i18n="bloom3.latin">Anemone coronaria</span>
+            </div>
+          </article>
+
+          <article class="bloom-card reveal">
+            <img class="bloom-thumb" src="assets/images/bloom-eukalyptus.jpg" alt="Sølvgrønn eukalyptuskvist mot lys bakgrunn" data-i18n="bloom4.alt" loading="lazy" />
+            <div class="bloom-info">
+              <span class="bloom-name" data-i18n="bloom4.name">Eukalyptus</span>
+              <span class="bloom-latin" data-i18n="bloom4.latin">Eucalyptus cinerea</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sprig divider -->
+    <div class="sprig-divider" aria-hidden="true">
+      <svg width="44" height="14" viewBox="0 0 60 16" fill="currentColor">
+        <path d="M2 8 H58" stroke="currentColor" stroke-width="0.8" fill="none"/>
+        <ellipse cx="14" cy="5" rx="4" ry="1.6" transform="rotate(-30 14 5)"/>
+        <ellipse cx="14" cy="11" rx="4" ry="1.6" transform="rotate(30 14 11)"/>
+        <ellipse cx="30" cy="3" rx="5" ry="1.8" transform="rotate(-12 30 3)"/>
+        <ellipse cx="30" cy="13" rx="5" ry="1.8" transform="rotate(12 30 13)"/>
+        <ellipse cx="46" cy="5" rx="4" ry="1.6" transform="rotate(30 46 5)"/>
+        <ellipse cx="46" cy="11" rx="4" ry="1.6" transform="rotate(-30 46 11)"/>
+      </svg>
+    </div>
+
+    <!-- === OCCASION PICKER === -->
+    <section class="occasion-picker">
+      <div class="occasion-inner">
+        <span class="section-label reveal" data-i18n="occasion.label">Anledning</span>
+        <h2 class="reveal" data-i18n="occasion.heading">Til hvilken stund?</h2>
+        <p class="occasion-sub reveal" data-i18n="occasion.sub">Vi former hver bukett etter dagens betydning — store dager, stille dager, og dagene midt imellom.</p>
+
+        <div class="occasion-grid reveal-stagger">
+          <a class="occasion-card reveal" href="bouquetter.html">
+            <svg class="occasion-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M16 5 C 11 9 11 14 16 17 C 21 14 21 9 16 5 Z"/>
+              <path d="M5 16 C 9 11 14 11 17 16 C 14 21 9 21 5 16 Z"/>
+              <path d="M27 16 C 23 11 18 11 15 16 C 18 21 23 21 27 16 Z"/>
+              <path d="M16 27 C 11 23 11 18 16 15 C 21 18 21 23 16 27 Z"/>
+            </svg>
+            <h3 data-i18n="occ1.title">Bryllup</h3>
+            <p data-i18n="occ1.text">Til de største dagene</p>
+          </a>
+
+          <a class="occasion-card reveal" href="bouquetter.html">
+            <svg class="occasion-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M8 26 L24 26"/>
+              <path d="M16 26 L16 6"/>
+              <path d="M11 6 L21 6"/>
+              <ellipse cx="16" cy="14" rx="6" ry="3.5"/>
+            </svg>
+            <h3 data-i18n="occ2.title">Begravelse</h3>
+            <p data-i18n="occ2.text">I sorgens stillhet</p>
+          </a>
+
+          <a class="occasion-card reveal" href="bouquetter.html">
+            <svg class="occasion-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M16 27 C 9 22 6 16 9 11 C 12 7 16 9 16 13 C 16 9 20 7 23 11 C 26 16 23 22 16 27 Z"/>
+            </svg>
+            <h3 data-i18n="occ3.title">Fødsel</h3>
+            <p data-i18n="occ3.text">Velkommen til verden</p>
+          </a>
+
+          <a class="occasion-card reveal" href="bouquetter.html">
+            <svg class="occasion-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <circle cx="16" cy="16" r="10"/>
+              <path d="M11 14 C 13 11 15 11 16 13 C 17 11 19 11 21 14 C 21 17 16 21 16 21 C 16 21 11 17 11 14 Z"/>
+            </svg>
+            <h3 data-i18n="occ4.title">Kjærlighet</h3>
+            <p data-i18n="occ4.text">Ord uten ord</p>
+          </a>
+
+          <a class="occasion-card reveal" href="bouquetter.html">
+            <svg class="occasion-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M6 12 L26 12 L24 26 L8 26 Z"/>
+              <path d="M11 12 C 11 8 14 6 16 9 C 18 6 21 8 21 12"/>
+              <path d="M16 16 L16 22"/>
+            </svg>
+            <h3 data-i18n="occ5.title">Takk</h3>
+            <p data-i18n="occ5.text">Bare fordi</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- === ABOUT FLORIST (welcome) === -->
+    <section class="welcome">
+      <div class="welcome-inner">
+        <div class="welcome-text reveal">
+          <span class="section-label" data-i18n="welcome.label">Florale Lilja</span>
+          <h2 data-i18n="welcome.heading">Et lite studio. Mye håndverk.</h2>
+          <p data-i18n="welcome.p1">Florale Lilja er et stilleflytende studio på Orkanger, drevet av Ingrid Lilja siden 2014. Her finner du ingen typisk butikkhylle med ferdigpakkede buketter — alt bindes etter hånd, etter sesong, etter den anledningen blomstene skal til.</p>
+          <p data-i18n="welcome.p2">Vi henter blomstene våre fra norske gartnerier når vi kan, og fra ansvarlige importører resten av året. Sortimentet skifter med uka — det er sjelden to dager helt like hos oss.</p>
+          <p data-i18n="welcome.p3">Kom innom for en kaffe, eller send oss noen ord om hva blomstene skal si.</p>
+          <p class="welcome-signoff" data-i18n="welcome.signoff">— Ingrid Lilja</p>
+        </div>
+
+        <div class="welcome-image reveal" style="transition-delay: 0.15s;">
+          <img
+            src="assets/images/studio-portrait.jpg"
+            data-i18n="welcome.img.alt"
+            alt="Florist Ingrid binder en bukett ved arbeidsbenken i et lyst studio"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- === VIPPS ORDER CTA === -->
+    <section class="vipps-cta">
+      <div class="vipps-cta-inner reveal">
+        <span class="section-label" data-i18n="cta.label">Bestilling</span>
+        <h2 data-i18n="cta.heading">Klar for å sende noen blomster?</h2>
+        <p data-i18n="cta.sub">Velg en bukett, fortell oss litt om dagen den skal til, og vi binder den klar til henting eller levering. Du betaler trygt med Vipps.</p>
+        <a href="#" class="btn btn-accent vipps-trigger" data-i18n="cta.btn">Bestill via Vipps</a>
+        <a href="bouquetter.html" class="btn btn-outline" data-i18n="cta.btn2">Se buketter</a>
+      </div>
+    </section>
+
+    <!-- === CONTACT STRIP === -->
+    <section class="contact-strip" aria-label="Kontaktinformasjon">
+      <div class="contact-strip-inner">
+        <div class="contact-block reveal">
+          <h3 data-i18n="contact.h1">Adresse</h3>
+          <p data-i18n="contact.p1">Orkdalsveien 25
+7300 Orkanger</p>
+        </div>
+        <div class="contact-block reveal">
+          <h3 data-i18n="contact.h2">Åpningstider</h3>
+          <p data-i18n="contact.p2">Tirs–fre 10–17
+Lør 10–14</p>
+        </div>
+        <div class="contact-block reveal">
+          <h3 data-i18n="contact.h3">Snakk med oss</h3>
+          <p>
+            <a href="tel:+4772481122">+47 72 48 11 22</a><br>
+            <a href="mailto:post@floralelilja.no">post@floralelilja.no</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- === FOOTER === -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3 data-i18n="nav.logo">Florale Lilja</h3>
+        <p data-i18n="footer.tagline">Lokalt bundne buketter siden 2014.</p>
+        <address class="footer-address" data-i18n="footer.address">Orkdalsveien 25, 7300 Orkanger</address>
+      </div>
+
+      <nav class="footer-links" aria-label="Sidelenker">
+        <h4 data-i18n="footer.links">Sider</h4>
+        <ul>
+          <li><a href="index.html"      data-i18n="nav.home">Hjem</a></li>
+          <li><a href="bouquetter.html" data-i18n="nav.bouquets">Buketter</a></li>
+          <li><a href="om-oss.html"     data-i18n="nav.about">Om oss</a></li>
+          <li><a href="galleri.html"    data-i18n="nav.gallery">Galleri</a></li>
+          <li><a href="kontakt.html"    data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h4 data-i18n="footer.contact">Kontakt</h4>
+        <p><a href="tel:+4772481122" data-i18n="footer.phone">+47 72 48 11 22</a></p>
+        <p><a href="mailto:post@floralelilja.no" data-i18n="footer.email">post@floralelilja.no</a></p>
+        <p class="response-note" data-i18n="footer.response">Vi svarer som regel innen samme dag</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span data-i18n="footer.copyright">© 2026 Florale Lilja</span>
+      <a href="#" data-i18n="footer.dev">Utviklet av Bithun</a>
+      <img src="https://visitor-badge.laobi.icu/badge?page_id=demo-blomsterbutikk-premium.ibithun.com&left_color=%23333333&right_color=%233A5A40&left_text=Views" alt="Sidevisninger" />
+    </div>
+  </footer>
+
+  <!-- === VIPPS MODAL === -->
+  <div class="modal-backdrop" id="vipps-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <div class="modal-vipps-logo" aria-label="Vipps">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <circle cx="10" cy="10" r="10" fill="white" opacity="0.25"/>
+          <text x="10" y="14" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">V</text>
+        </svg>
+        Vipps
+      </div>
+      <h2 id="modal-title" data-i18n="modal.title">Dette er en demo</h2>
+      <p data-i18n="modal.body1">Dette er en demo — Vipps-betaling aktiveres når din konto er satt opp.</p>
+      <p>
+        <span data-i18n="modal.body2">Kontakt oss for å se hvordan dette fungerer for din butikk:</span>
+        <a href="mailto:post@floralelilja.no" data-i18n="modal.email">post@floralelilja.no</a>
+      </p>
+      <button type="button" class="modal-close-btn" data-i18n="modal.close">Lukk</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

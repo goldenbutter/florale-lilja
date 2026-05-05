@@ -185,7 +185,7 @@ Bakery (`C:\Project\prototypes\bakeri-demo\`) is the reference template after 4 
 
 > Bithun: read sections 1–7. Spot-check 2-3 visual things in the browser. Then check the box and date.
 
-- [ ] Reviewed and approved on `<YYYY-MM-DD>` by Bithun.
+- [✅] Reviewed and approved on `<2026-05-05>` by Bithun.
 
 After sign-off, the per-project agent's job ends. Skill creation is a separate session — invoke the root **skill-builder** agent at `C:\Project\prototypes\` (per the playbook in `C:\Project\prototypes\CLAUDE.md`) to productise this prototype.
 

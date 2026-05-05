@@ -215,6 +215,14 @@
 - **Why:** user reviewed the previous "active uses green underline as you-are-here marker" decision and asked for **no underline anywhere** + **brown for both hover and active**. Cleaner visual signature; the active route is still discernible because brown contrasts more with the muted grey rest state than green-on-grey did, even without the underline.
 - **How to revert:** `git revert <sha>`. Restores the `.nav-links a::after` block + the previous separated `:hover` / `.active` rules (hover = brown, active = green underline).
 
+### Commit `<pending>` — Add GitHub MCP permissions block to CLAUDE.md
+- **Date:** 2026-05-05
+- **Type:** docs
+- **Files touched:** `CLAUDE.md` (gitignored — not part of this commit's tracked diff). Build log is the only tracked artefact.
+- **What:** Inserted `## GitHub permissions (when GitHub MCP is connected)` block per family-wide policy (`C:\Project\prototypes\_docs\_skill\GITHUB-AGENT-PERMISSIONS.md`). Section sits between `## Family-wide locks` and `## Anti-patterns`. Scopes the agent to `goldenbutter/florale-lilja` only, with the 5-check pre-push gate. Repo will be created on first MCP-driven push (Phase 3 of the GitHub MCP rollout). Instruction file `.claude/_prompt/github-mcp-permissions-update.md` deleted after applying.
+- **Why:** GitHub MCP enabled family-wide on 2026-05-05. Blomster is the first prototype to test the new MCP-driven repo-creation flow — applying this instruction is the prerequisite to that test.
+- **How to revert:** delete the inserted `## GitHub permissions` section from CLAUDE.md. (CLAUDE.md is gitignored, so revert is manual file edit, not `git revert`.)
+
 > **Template entry — copy and fill in for every subsequent commit:**
 >
 > ```

@@ -3,8 +3,8 @@
 A two-tier static website prototype for a fictional Norwegian studio florist (blomsterbutikk) in Orkanger. Built to demonstrate what a real florist client site can look like at two price points.
 
 **Live demos:**
-- Classic → [demo-blomsterbutikk-classic.ibithun.com](https://demo-blomsterbutikk-classic.ibithun.com)
-- Premium → [demo-blomsterbutikk-premium.ibithun.com](https://demo-blomsterbutikk-premium.ibithun.com)
+- Classic → [demo-flowershop-classic.ibithun.com](https://demo-flowershop-classic.ibithun.com)
+- Premium → [demo-flowershop-premium.ibithun.com](https://demo-flowershop-premium.ibithun.com)
 
 > Both sites ship with `<meta name="robots" content="noindex, nofollow">` and a `Disallow: /` `robots.txt`. Demo content should not compete in search results with the eventual real client site.
 

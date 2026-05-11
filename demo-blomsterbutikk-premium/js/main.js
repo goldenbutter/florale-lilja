@@ -803,6 +803,27 @@ function revealHero() {
   tick();
 }
 
+// Mobile Safari fires :hover unreliably and leaves sticky states. Tapping a
+// hover-to-reveal element toggles .is-tapped for 1.4s — same CSS as :hover
+// (animation pause + content reveal). Tap another element to swap focus.
+function initCardTapHover() {
+  const selector = '.bloom-card, .bouquet-card, .occasion-card, .value-block, .gallery-item';
+  let activeEl = null;
+  let activeTimer = null;
+  document.addEventListener('touchstart', (e) => {
+    const card = e.target.closest(selector);
+    if (!card) return;
+    if (activeTimer) clearTimeout(activeTimer);
+    if (activeEl && activeEl !== card) activeEl.classList.remove('is-tapped');
+    card.classList.add('is-tapped');
+    activeEl = card;
+    activeTimer = setTimeout(() => {
+      card.classList.remove('is-tapped');
+      if (activeEl === card) activeEl = null;
+    }, 1400);
+  }, { passive: true });
+}
+
 // === INIT ===
 document.addEventListener('DOMContentLoaded', () => {
   applyTranslations();
@@ -813,6 +834,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaq();
   initGallery();
   initBouquetGenerator();
+  initCardTapHover();
   revealHero();
 
   document.querySelector('main')?.classList.add('page-fade');
